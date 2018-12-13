@@ -1,0 +1,98 @@
+/* general styles */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.content {
+ max-width: 900px;
+ margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header styles */
+.page-header {
+  display: flex;
+  padding: 1em;
+  border-bottom: 3px solid #7d97ad;
+  margin-bottom: 1.5em;
+  color: #2d3c49;
+}
+
+.page-header .title {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+
+.page-header .title .profession {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+/* banner styles */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 900px;
+  padding-top: 50%;
+  box-shadow: 0 0 40px white inset;
+}
+
+.banner .banner-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+
+/* portfolio styles */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .header {
+  color: #7d97ad;
+  font-size: 1.5em;
+  margin: 1em 5px 0.5em;
+  width: 100%;
+}
+
+.portfolio-item {
+  text-align: center;
+  color: ##2d3c49;
+  margin-bottom: 1.5em;
+}
+
+.portfolio-item .title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0.3em 0;
+}
+
+.portfolio-item .link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}

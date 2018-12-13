@@ -1,0 +1,7 @@
+.portfolio-item {
+  width: 48%;
+}
+
+.portfolio {
+  justify-content: space-between;
+}
